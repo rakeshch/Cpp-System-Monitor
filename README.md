@@ -4,7 +4,7 @@
 
 ## Project Design
 
-![System Monitor](images/architecture.png)
+![System Monitor](images/architecture.PNG)
 
 ### System Data
 
@@ -41,7 +41,7 @@ Linux stores processor utilization data within the /proc/stat file.
 This data is more complex than most of the other data necessary to complete this project.
 For example, /proc/stat contains aggregate processor information (on the "cpu" line) and individual processor information (on the "cpu0", "cpu1", etc. lines). Indeed, [htop](https://hisham.hm/htop/) displays utilization information for each individual processor.
 
-![htop](images/htop.png)
+![htop](images/htop.PNG)
 
 This project, however only display the aggregate CPU information, which you can find on the "cpu" line of /proc/stat.
 
