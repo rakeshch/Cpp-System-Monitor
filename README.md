@@ -22,7 +22,7 @@ Information about the kernel exists in /proc/version file.
 Information about memory utilization exists in the /proc/meminfo file.
 
 There are a variety of ways to use this data to calculate memory utilization.
-Hisham H. Muhammad, the author of htop, wrote a [Stack Overflow answer] (https://stackoverflow.com/questions/41224738/how-to-calculate-system-memory-usage-from-proc-meminfo-like-htop/41251290#41251290) about how htop calculates memory utilization from the data in /proc/meminfo. This project calculates memory utilization based on this.
+Hisham H. Muhammad, the author of htop, wrote a [Stack Overflow answer](https://stackoverflow.com/questions/41224738/how-to-calculate-system-memory-usage-from-proc-meminfo-like-htop/41251290#41251290) about how htop calculates memory utilization from the data in /proc/meminfo. This project calculates memory utilization based on this.
 
 ### Total Processes
 Information about the total number of processes on the system exists in the /proc/meminfo file. 
@@ -75,7 +75,7 @@ Each process has an associated user identifier (UID), corresponding to the proce
 2.	Find the user corresponding to that UID
 The UID for a process is stored in /proc/[PID]/status.
 
-The [man page] (http://man7.org/linux/man-pages/man5/proc.5.html) for proc contains a "/proc/[pid]/status" section that describes this file.
+The [man page](http://man7.org/linux/man-pages/man5/proc.5.html) for proc contains a "/proc/[pid]/status" section that describes this file.
 For the purposes of this project, you simply need to capture the first integer on the "Uid:" line.
 
 ### Username
